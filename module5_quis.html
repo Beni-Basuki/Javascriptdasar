@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>module 5 quis</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    function matchcalc (weight,height){
+        this.weight = weight;
+        this.height = height;
+        this.samplecalc = calculate;
+        function calculate(){
+            return weight + height;
+        }
+    }
+    const a = new matchcalc(10,12);
+    document.getElementById("demo").innerHTML =
+         a.weight + "+" + a.height + "=" + a.samplecalc() ;
+</script>
+</body>
+</html>

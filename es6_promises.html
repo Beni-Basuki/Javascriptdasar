@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6 promises</title>
+</head>
+<body>
+<script>
+    function foo() {
+        return new Promise((
+            resolve, reject
+        ) => {
+            let result = getSomeResult();
+            if (result)
+                resolve('Success');
+            else
+                reject('Something went wrong');
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>the object construktur</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    function movie(title, director){
+        this.title = title;
+        this.director = director;
+    }
+    var one = new movie("Spiderman", "Beni")
+    document.getElementById("demo").innerHTML =
+        "Title movie" + one.title + ". Director movie " + one.director + ".";
+
+</script>
+</body>
+</html>
